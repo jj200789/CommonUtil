@@ -21,7 +21,7 @@ extension String {
         return subString(from: position, to: self.count)
     }
     
-    subscript(_ range: CountableRange<Int>) -> String {
+    public subscript(_ range: CountableRange<Int>) -> String {
         return subString(from: range.lowerBound, to: range.upperBound)
     }
     
@@ -29,7 +29,7 @@ extension String {
         return self[position..<position+1]
     }
     
-    subscript(_ index: Int) -> String {
+    public subscript(_ index: Int) -> String {
         return char(at: index)
     }
     
